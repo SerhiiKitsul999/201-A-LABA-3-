@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн школа</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Вітаємо в онлайн школі</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="survey.html">Опитувальник</a></li>
+                <li>
+                    <a href="news.html">Новини &#9662;</a>
+                    <ul class="submenu">
+                        <li><a href="#course">Новий курс</a></li>
+                        <li><a href="#sports">Спортивні змагання</a></li>
+                        <li><a href="#fair">Книжкова ярмарка</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <input type="search" name="search" id="search-lbl" placeholder="search...">
+        </nav>
+        <div class="circle"></div>
+        <div class="square"></div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Ласкаво просимо!</h2>
+            <p>Це головна сторінка нашої онлайн школи. Ви можете знайти нові курси, останні новини та пройти опитування.</p>
+        
+            <div class="image-wrapper">
+                <img src="images/1.jpg" alt="Головна сторінка" class="image" width="800px">
+                <div class="overlay-text">
+                    <p>Наша гордість - ваші знання</p>
+                </div>
+            </div>
+        
+            <div class="triangle"></div>
+        </section>
+        
+        
+    </main>
+
+    <footer>
+        <p>Наша школа - краща</p>
+    </footer>
+    <button id="scrollTop" title="Наверх">↑</button>
+    <script>
+        window.onscroll = function() {
+            var scrollTopButton = document.getElementById("scrollTop");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollTopButton.style.display = "block";
+            } else {
+                scrollTopButton.style.display = "none";
+            }
+        };
+        
+        document.getElementById('scrollTop').onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
